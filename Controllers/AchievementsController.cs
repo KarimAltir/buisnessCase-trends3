@@ -48,7 +48,7 @@ namespace buisnessCase_trends3.Controllers
         // GET: Achievements/Create
         public IActionResult Create()
         {
-            ViewData["TaskName"] = new SelectList(_context.Task, "TaskName", "TaskName");
+            ViewData["TaskName"] = new SelectList(_context.Task, "Id", "TaskName");
             return View();
         }
 
